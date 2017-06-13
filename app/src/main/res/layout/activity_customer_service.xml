@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_customerService"
+        app:rightIsVIsible="false"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mainTitle="客服中心">
+
+    </com.itheima10.team17.redchild.view.TitleBar>
+
+    <ListView
+        android:id="@+id/lv_customerService"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

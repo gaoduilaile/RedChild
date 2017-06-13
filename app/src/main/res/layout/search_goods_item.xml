@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_searchfragment_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/a13"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_searchfragment_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贝因美奶粉(900克)"
+            android:textColor="#000"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/tv_searchfragment_price"
+            android:layout_below="@+id/tv_searchfragment_sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="20sp"
+            android:text="￥68"/>
+
+        <TextView
+            android:id="@+id/tv_searchfragment_deleteprice"
+            android:layout_toRightOf="@+id/tv_searchfragment_price"
+            android:layout_below="@+id/tv_searchfragment_sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥68"/>
+
+        <TextView
+            android:id="@+id/tv_searchfragment_assess"
+            android:layout_below="@+id/tv_searchfragment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="已有89675人评价"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

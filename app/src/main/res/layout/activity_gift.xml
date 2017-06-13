@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.itheima10.team17.redchild.ui.activity.GiftActivity">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_gift"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        app:mainTitle="我的礼品卡"
+        app:rightIsVIsible="false"
+        app:rightTitle="清空"
+        app:titleDrawable="@mipmap/about" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/empty_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        app:mainTitle="支付宝"
+        app:rightIsVIsible="false"
+        app:titleIsPicture="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkoutcenter_customframe"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账号："
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_alipay_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:text="itheima@itcast.cn"
+            android:hint="请输入支付宝账号"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/checkoutcenter_customframe"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_alipay_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:text="itheima123456"
+            android:hint="请输入至少6位密码"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+
+
+    <Button
+
+        android:id="@+id/btn_alipay_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="18dp"/>
+
+</LinearLayout>

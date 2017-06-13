@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/limitbuy_ll_iv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ayj"/>
+
+    <ImageView
+        android:src="@mipmap/a42"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/limitbuy_ll_intor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/limitbuy_ll_iv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/limitbuy_ll_iv"
+        android:text="商品名称"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/limitbuy_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/limitbuy_ll_intor"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/limitbuy_ll_iv"
+        android:text="￥68.00"
+        android:textColor="#7B7B7B"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/limitbuy_ll_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/limitbuy_tv_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/limitbuy_ll_iv">
+
+        <TextView
+            android:id="@+id/limitbuy_tv_limitprice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/limitbuy_tv_price"
+            android:text="限时特价:"
+            android:textColor="#7B7B7B"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/limitbuy_tv_limitprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥68.00"
+            android:textColor="#f00"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/limitbuy_ll_iv"
+        android:id="@+id/limitbuy_tv_lasttime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/lefttime"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="35dp"
+        android:paddingRight="5dp"
+        android:text="00:00:00"
+        android:textColor="@color/red"
+        android:layout_below="@+id/limitbuy_ll_ll"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/limitbuy_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/arrow_normal"/>
+
+    <Button
+
+        android:id="@+id/limitbuy_bt"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/limitbuy_ll_ll"
+        android:background="@drawable/limitbuy_bt_bg"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="立即抢购"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

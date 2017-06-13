@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#FF3333</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="home_bar_text_normal">#6a6c6f</color>
+    <color name="home_bar_text_push">#ff5959</color>
+    <color name="textnormal">#adadad</color>
+
+    <color name="btn_bg_pressed_color">#ffacac</color>
+    <color name="btn_bg_color">#ff5959</color>
+
+    <color name="btn_itemcount_pressed">#666666</color>
+    <color name="btn_itemcount_normal">#aaaaaa</color>
+
+    <!--红色-->
+    <color name="btn_red_pressed">#AE0505</color>
+    <color name="btn_red_normal">#FF0000</color>
+
+    <!--分割线颜色-->
+    <color name="line">#aaa</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="indicator_normal">#fff0f0f0</color>
+
+    <color name="indicator_select">#969696</color>
+    <color name="white">#ffffffff</color>
+    <color name="theme_gray">#F5F5F5</color>
+    <color name="slider_color_normal">#ffa6a6a6</color>
+    <color name="slider_color">#ff969696</color>
+
+
+</resources>

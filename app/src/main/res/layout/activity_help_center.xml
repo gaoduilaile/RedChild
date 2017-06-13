@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_help_center"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        app:mainTitle="帮助中心"
+        app:rightIsVIsible="false"
+        app:titleDrawable="@mipmap/about" />
+
+    <com.itheima10.team17.redchild.view.MoreCommonItem
+        android:layout_marginTop="20dp"
+        android:id="@+id/mci_help_center_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgType="first"
+        app:itemName="购物指南"
+        app:rightDrawable="@mipmap/arrow"/>
+
+    <com.itheima10.team17.redchild.view.MoreCommonItem
+        android:id="@+id/mci_help_center_sercice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgType="middle"
+        app:itemName="售后服务"
+        app:rightDrawable="@mipmap/arrow"/>
+
+    <com.itheima10.team17.redchild.view.MoreCommonItem
+        android:id="@+id/mci_help_center_sendWay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgType="last"
+        app:itemName="配送方式"/>
+
+</LinearLayout>

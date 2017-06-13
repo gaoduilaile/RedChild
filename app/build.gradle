@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+
+
+    signingConfigs {
+        Fanfan {
+            keyAlias 'Fanfan'
+            keyPassword 'fisherno.1'
+            storeFile file('C:/workspace/StudioProject/RedChild/redchild.jks')
+            storePassword 'fdf495'
+        }
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.itheima10.team17.redchild"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/lite-orm-1.9.1.jar')
+    //compile 'homhomlin.lib:apsts:1.4.0'
+    //    compile(name: 'rxandroid-1.2.0', ext: 'aar')
+    compile(name: 'apsts-1.4.0', ext: 'aar')
+    compile(name: 'flipviewpager-debug', ext: 'aar')
+    //    compile(name: 'javaapkcomcity-debug', ext: 'aar')
+    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.3.0'
+    //广告栏轮播图
+    //compile 'com.bigkoo:pickerview:2.0.8'
+    //地址滚动
+    compile 'tyrantgit:explosionfield:1.0.1'
+    //删除动画
+    compile 'com.bigkoo:pickerview:2.0.8'
+    //三级联动
+    compile 'com.rockerhieu:rv-adapter-states:1.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'io.reactivex:rxjava:1.1.5'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.bigkoo:snappingstepper:1.0.2'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    //友盟
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.hovans.dynamicgrid:dynamicgrid:1.0.0'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.jakewharton:butterknife:8.4.0'
+}

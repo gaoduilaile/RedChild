@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        app:mainTitle="我的订单"
+        app:rightIsVIsible="false"
+        app:titleIsPicture="false"/>
+
+    <com.lhh.apst.library.AdvancedPagerSlidingTabStrip
+        android:id="@+id/tabs_myorder"
+        style="@style/pagertab_icon_style"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fillViewport="false" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

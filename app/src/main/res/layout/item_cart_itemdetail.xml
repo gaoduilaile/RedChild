@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <CheckBox
+        android:id="@+id/rb_cart_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btn_product_del"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_btn_del"
+        android:text="删除"
+        android:layout_width="40dp"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_product_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/rb_cart_selected"
+        android:src="@mipmap/product_loading"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_product_pic"
+        android:layout_toLeftOf="@id/btn_product_del"
+        android:maxLines="2"
+        android:text="童壹库男童圆领毛衣KGME081101"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_product_pricetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv_product_pic"
+        android:text="单价:"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tv_product_pricetitle"
+        android:text="￥0.00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_product_totalpricetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv_product_pic"
+        android:text="合计:"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tv_product_totalpricetitle"
+        android:text="￥0.00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+
+    <com.itheima10.team17.redchild.view.ItemCountView
+        android:id="@+id/tv_product_countview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_alignTop="@+id/tv_product_totalprice"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

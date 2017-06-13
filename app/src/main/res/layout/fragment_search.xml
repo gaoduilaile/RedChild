@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/main_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsVisible="false"
+        app:mainTitle="搜索"
+        app:rightIsVIsible="false"
+        app:titleDrawable="@mipmap/about" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_search_bg">
+
+        <EditText
+            android:id="@+id/et_searchfragment_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入关键字"
+            android:padding="10dp"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_searchfragment_query"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_search_bt_normal"
+            android:text="搜索"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="热门搜索" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <GridView
+            android:id="@+id/gv_searchfragment_hotsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:padding="10dp"
+            android:verticalSpacing="8dp">
+
+
+        </GridView>
+
+        <LinearLayout
+            android:background="@color/button_text_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/ll_searchfragment"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:onClick="start"
+                android:id="@+id/iv_searchfragment_anim"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/loading_animtaion"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_searchfragment_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".........玩命加载"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

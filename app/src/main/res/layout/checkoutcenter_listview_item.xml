@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_product_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:text="童壹库男童圆领毛衣KGME081101"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:text="颜色/尺码："
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_property_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:text="蓝色/L"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_property"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:text="价格：￥181.00"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_property"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:text="数量：1"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:text="小计："
+        android:textSize="14dp"
+        />
+</RelativeLayout>

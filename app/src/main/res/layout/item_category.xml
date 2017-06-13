@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_width="match_parent"
+                android:background="#eeeeee"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_product_title"
+        android:text="我是标题"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" >
+    </TextView>
+
+    <include
+        android:layout_below="@id/tv_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/gvlayout_category"
+        layout="@layout/layout_gridview" />
+
+
+</RelativeLayout>

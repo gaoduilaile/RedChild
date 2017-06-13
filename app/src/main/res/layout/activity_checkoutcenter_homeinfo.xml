@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--titlebar布局-->
+        <com.itheima10.team17.redchild.view.TitleBar
+            android:id="@+id/main_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            app:leftIsVisible="true"
+            app:rightIsVIsible="false"
+            app:rightTitle="提交订单"
+            app:leftTitle="购物车"
+            app:mainTitle="结算中心"
+            app:titleDrawable="@mipmap/about"
+            app:titleIsPicture="false"
+           android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_checkout_arriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/checkoutcenter_customframe">
+                <TextView
+                    style="@style/countcenter_customframe"
+                    android:text="收件人信息 :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_arriver_desc"
+                    android:layout_toRightOf="@+id/tv_checkout_arriver"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_checkout_paymode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/checkoutcenter_customframe">
+                <TextView
+                    style="@style/countcenter_customframe"
+                    android:text="支付方式 :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_paymode_desc"
+                    android:layout_toRightOf="@+id/tv_checkout_arriver"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkout_sendtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/checkoutcenter_customframe">
+                <TextView
+                    style="@style/countcenter_customframe"
+                    android:text="送货时间 :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_sendtime_desc"
+                    android:layout_toRightOf="@+id/tv_checkout_arriver"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkout_sendmode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/checkoutcenter_customframe">
+                <TextView
+                    style="@style/countcenter_customframe"
+                    android:text="送货方式 :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_sendmode_desc"
+                    android:layout_toRightOf="@+id/tv_checkout_arriver"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_checkout_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/checkoutcenter_customframe">
+                <TextView
+                    style="@style/countcenter_customframe"
+                    android:text="使用优惠券 :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="新用户30元代金券"
+                    android:id="@+id/tv_coupon_desc"
+                    android:layout_toRightOf="@+id/tv_checkout_arriver"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+                <!--<ImageView-->
+                    <!--android:layout_width="24dp"-->
+                    <!--android:layout_height="24dp"-->
+                    <!--android:src="@mipmap/arrow"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkout_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/checkoutcenter_customframe">
+                <TextView
+                    style="@style/countcenter_customframe"
+                    android:text="索要发票 :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_invoice_desc"
+                    android:layout_toRightOf="@+id/tv_checkout_arriver"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/segment_normal_2_bg"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="商品明细"
+            android:textSize="20dp"
+            />
+        <com.itheima10.team17.redchild.view.MListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_checkoutcenter">
+
+        </com.itheima10.team17.redchild.view.MListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/product_detail_gallery"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数量总计："
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_productDesc_totalNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1件"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原始金额："
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_original_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥181.00"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运费："
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥10.00"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="促销优惠金额："
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥-30.00"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应支付金额："
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_account_payable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥161.00"
+                    android:textSize="14dp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您已享受到以下优惠："
+            android:padding="12dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可以享受的优惠活动信息（满增、满减）"
+            android:padding="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/checkoutcenter_customframe"
+            />
+
+        <Button
+            android:id="@+id/btn_checkout_submit_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交订单"
+            android:background="@mipmap/button_long_normal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="60dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

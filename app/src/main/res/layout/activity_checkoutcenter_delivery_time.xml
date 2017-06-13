@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+    <!--titlebar布局-->
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/main_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:leftIsVisible="true"
+        app:leftTitle="结算中心"
+        app:rightIsVIsible="false"
+        app:mainTitle="选择送货时间"
+        app:titleDrawable="@mipmap/about"
+        app:titleIsPicture="false"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:text="送货时间"
+            style="@style/customcenter_content_title"/>
+
+        <TextView
+            android:background="@drawable/first_normal"
+            android:text="工作日、双休日与节假日送货"
+            style="@style/customframe_first"/>
+        <TextView
+            android:background="@drawable/middle_normal"
+            android:text="只双休日、节假日送货"
+            style="@style/customframe_middle"/>
+        <TextView
+            android:background="@drawable/last_normal"
+            android:text="只工作日送货"
+            style="@style/customframe_below"/>
+
+    </LinearLayout>
+</LinearLayout>

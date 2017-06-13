@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itheima10.team17.redchild.ui.activity.SearchLogisticsActivity">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_search_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsVisible="true"
+        app:rightIsVIsible="false"
+        app:leftTitle="返回"
+        app:leftIsBack="true"
+        app:mainTitle="物流查询"
+        app:titleDrawable="@mipmap/about"
+        app:titleIsPicture="false"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_search_logistics"
+        android:layout_width="wrap_content"
+        android:textColor="#00ff00"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="东西已经到了隔壁老王家"/>
+</RelativeLayout>

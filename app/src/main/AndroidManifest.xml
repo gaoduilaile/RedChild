@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.itheima10.team17.redchild">
+
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/huaji"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme" >
+
+        <!-- 闪屏页 -->
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 登录账户界面 -->
+        <activity android:name=".ui.activity.LauncherActivity"/>
+        <!-- 注册账户界面 -->
+        <activity android:name=".ui.activity.RegisterActivity"/>
+        <!-- 账户中心界面 -->
+        <activity android:name=".ui.activity.UserCenterActivity"/>
+        <!-- 我的订单界面 -->
+        <activity android:name=".ui.activity.MyOrderAcrivity"/>
+        <!-- 订单详情界面 -->
+        <activity android:name=".ui.activity.OrderInfoActivity"/>
+        <!-- 收藏夹界面 -->
+        <activity android:name=".ui.activity.FavoriteActivity"/>
+        <!-- 限时抢购 -->
+        <activity android:name=".activity.LimitBuyAvtivity"/>
+        <!-- 促销快报 -->
+        <activity android:name=".activity.SalesPromotionActivity"/>
+        <!-- 地址管理 -->
+        <activity android:name=".ui.activity.AddressManagementActivity"/>
+        <!-- 推荐品牌 -->
+        <activity android:name=".activity.RecBrandActivity"/>
+        <!-- 热门单品 -->
+        <activity android:name=".activity.HotProductActivity"/>
+        <!-- 搜索结果界面 -->
+        <activity android:name=".ui.activity.SearchResultActivity"/>
+
+        <!-- 索要发票界面 -->
+        <activity android:name=".activity.Checkout_InvoiceInfo"/>
+        <!-- 优惠券界面 -->
+        <activity android:name=".activity.CheckoutCoupon"/>
+
+        <!-- 支付方式界面 -->
+        <activity android:name=".activity.CheckoutcenterPayMode"/>
+        <!-- 送货时间界面 -->
+        <activity android:name=".activity.CheckoutcenterSendTime">
+        </activity>
+        <!-- 提交订单成功界面 -->
+        <activity android:name=".activity.CheckoutSuccess">
+        </activity>
+        <!-- 结算中心主界面 -->
+        <activity android:name=".activity.CheckoutCenterHomeActivity"/>
+        <!-- 新品上架 -->
+
+
+        <!-- 友盟插件 -->
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <!-- Caution! Do not change this app key. It is only for demo usage. -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="576376b867e58ec150002e8b">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng">
+        </meta-data>
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService">
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name=".ui.activity.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail1"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".ui.activity.CouponActivity">
+        </activity>
+        <activity android:name=".ui.activity.GiftActivity">
+        </activity>
+        <activity android:name=".ui.activity.FeedBackActivity">
+        </activity>
+        <activity android:name=".ui.activity.AboutAppActivity">
+        </activity>
+        <!-- 增加新地址 -->
+        <activity android:name=".ui.activity.AddNewAddressActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.CheckoutcenterAliPay">
+        </activity>
+        <!-- 帮助中心 -->
+        <activity android:name=".ui.activity.HelpCenterActivity">
+        </activity>
+        <activity android:name=".ui.activity.SearchLogisticsActivity">
+        </activity>
+        <activity android:name=".ui.activity.CustomerServiceActivity">
+        </activity>
+    </application>
+
+</manifest>

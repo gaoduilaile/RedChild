@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/main_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        app:mainTitle="推荐品牌"
+        app:rightIsVIsible="false"
+        app:titleDrawable="@mipmap/about"
+        />
+<ExpandableListView
+    android:id="@+id/recbrand_elv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ExpandableListView>
+
+
+</LinearLayout>

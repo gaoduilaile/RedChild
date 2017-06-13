@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activity.ProductDetailActivity"
+    tools:showIn="@layout/activity_product_detail1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="80dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_content_productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="商品名称"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_content_productdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_content_productname"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="商品描述"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_content_productprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/tv_content_productdesc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="¥ 0.00"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_content_marketprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/tv_content_productdesc"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tv_content_productprice"
+                    android:paddingBottom="5dp"
+                    android:text="¥0.00"
+                    android:textColor="@android:color/darker_gray"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_content_lefttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/lefttime"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="5dp"
+                    android:text="12:12:12"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"/>
+
+                <com.itheima10.team17.redchild.view.ItemCountView
+                    android:id="@+id/tv_content_count"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/tv_content_lefttime"
+
+                    android:gravity="center_vertical|right"
+                    android:textSize="15sp"/>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="80dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_content_tag2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="商品详情"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_content_area_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_content_tag2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="发货地区:"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_content_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_content_area_title"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/tv_content_area_title"
+                    android:maxLines="2"
+                    android:text="全国"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/tv_content_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/tv_content_area_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textSize="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评分:"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_content_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="5"/>
+
+                    <!--"后期改成小星星"-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="80dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_content_tag3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="商品评价"
+                    android:textSize="16sp"/>
+
+                <com.itheima10.team17.redchild.view.MListView
+                    android:id="@+id/lv_content_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_content_tag3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

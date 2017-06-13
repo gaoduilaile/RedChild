@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lv_cart_list_emptyview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_cart_info"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/shopcar"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="请去添加购物车"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/btn_cart_empty1"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_btn_red"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="随便逛逛"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>

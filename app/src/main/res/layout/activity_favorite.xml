@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="#fff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.itheima10.team17.redchild.view.TitleBar
+        android:id="@+id/titlebar_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        app:leftIsBack="true"
+        app:leftTitle="返回"
+        app:mainTitle="收藏夹"
+        app:rightIsVIsible="true"
+        app:rightTitle="清空"
+        app:titleDrawable="@mipmap/about" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_favorite_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/empty_favorite"
+            android:visibility="invisible" />
+
+        <ListView
+            android:id="@+id/lv_favorite_showgoods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </FrameLayout>
+</LinearLayout>
